@@ -8,7 +8,7 @@ cd ${WORKSPACE}
 
 wget --no-check-certificate -qO "x-ui-linux-amd64.tar.gz"  "https://github.com/MHSanaei/3x-ui/releases/latest/download/x-ui-linux-amd64.tar.gz"
 
-systemctl stop x-ui
+
 rm x-ui/ /usr/local/x-ui/ /usr/bin/x-ui -rf
 tar zxvf x-ui-linux-amd64.tar.gz
 chmod +x x-ui/x-ui x-ui/bin/xray-linux-* x-ui/x-ui.sh
