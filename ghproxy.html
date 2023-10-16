@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="zh-Hans"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="./GitHub 文件加速_files/main.min.css">
+<link rel="shortcut icon" href="https://ghps.cc/favicon.ico">
+<title>GitHub 文件加速</title>
+<!-- Header -->
+</head><body><header id="header" class="alt">
+    <h1><a href="https://ghps.cc/">GitHub Proxy Server</a></h1>
+</header>
+<!-- CTA -->
+<section id="cta">
+    <img src="./GitHub 文件加速_files/github.png" height="100" width="100">
+    <br>
+    <h2>GitHub Proxy Server</h2>
+    <p>GitHub 文件 , Releases , archive , gist , raw.githubusercontent.com 文件代理加速下载服务.</p>
+    <form action="https://ghps.cc/" method="get" target="__blank">
+        <div class="row gtr-50 gtr-uniform">
+            <div class="col-8 col-12-mobilep">
+                <input class="block url" type="text" name="q" id="email" placeholder="输入 GitHub 文件链接" pattern="^((https|http):\/\/)?(github\.com\/.+?\/.+?\/(?:releases|archive|blob)|((?:raw|gist)\.(?:githubusercontent|github)\.com))\/.+$" required="">
+            </div>
+            <div class="col-4 col-12-mobilep">
+                <input type="submit" value="下载">
+            </div>
+        </div>
+    </form>
+</section>
+<section id="main" class="container">
+    <header>
+    </header>
+    <div class="row">
+        <div class="col-12">
+
+            <!-- Text -->
+            <section class="box">
+                <h3>终端命令行</h3>
+                <p>支持终端命令行 git clone , wget , curl 等工具下载.
+                    <br>
+                    支持 <font color="red">raw.githubusercontent.com</font> , <font color="red">gist.github.com
+                    </font> , <font color="red">gist.githubusercontent.com</font> 文件下载.
+                    <br>
+                    <b>注意：</b>不支持 SSH Key 方式 git clone 下载.
+                </p>
+
+                <hr>
+
+                <header>
+                    <h4><b>git clone</b></h4>
+                </header>
+                <p><b>git clone</b>
+                    <font color="red">https://ghps.cc/</font>
+                    <font color="green">https://github.com/stilleshan/ServerStatus</font>
+                </p>
+
+                <header>
+                    <h4><b>wget &amp; curl</b></h4>
+                </header>
+                <p><b>wget</b>
+                    <font color="red">https://ghps.cc/</font>
+                    <font color="green">https://github.com/stilleshan/ServerStatus/archive/master.zip</font>
+                    <br>
+                    <b>wget</b>
+                    <font color="red">https://ghps.cc/</font>
+                    <font color="green">https://raw.githubusercontent.com/stilleshan/ServerStatus/master/Dockerfile
+                    </font>
+                    <br>
+                    <b>curl -O</b>
+                    <font color="red">https://ghps.cc/</font>
+                    <font color="green">https://github.com/stilleshan/ServerStatus/archive/master.zip</font>
+                    <br>
+                    <b>curl -O</b>
+                    <font color="red">https://ghps.cc/</font>
+                    <font color="green">https://raw.githubusercontent.com/stilleshan/ServerStatus/master/Dockerfile
+                    </font>
+                </p>
+            </section>
+
+            <section class="box">
+                <h3>首页下载</h3>
+                <p>在本页地址栏输入合规链接（参考以下链接）点击下载按钮
+                    <br>
+                    支持 <font color="red">raw.githubusercontent.com</font> , <font color="red">gist.github.com
+                    </font> , <font color="red">gist.githubusercontent.com</font> 文件下载.
+                </p>
+
+                <hr>
+
+                <header>
+                    <h4><b>Raw 文件</b></h4>
+                </header>
+                <p>https://raw.githubusercontent.com/stilleshan/ServerStatus/master/Dockerfile</p>
+
+                <header>
+                    <h4><b>分支源码</b></h4>
+                </header>
+                <p>https://github.com/stilleshan/ServerStatus/archive/master.zip</p>
+
+                <header>
+                    <h4><b>Releases 源码</b></h4>
+                </header>
+                <p>https://github.com/stilleshan/ServerStatus/archive/v1.0.tar.gz</p>
+
+
+                <header>
+                    <h4><b>Releases 文件</b></h4>
+                </header>
+                <p>https://github.com/fatedier/frp/releases/download/v0.33.0/frp_0.33.0_linux_amd64.tar.gz</p>
+            </section>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <ul class="copyright">
+        <li>网页样式 : <a href="https://ghps.cc/" target="_blank">ghproxy.com</a></li>
+        <li>代理项目 : <a href="https://github.com/hunshcn/gh-proxy/" target="_blank">hunshcn/gh-proxy</a></li>
+    </ul>
+</footer>
+
+
+</body></html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://aaronyes.github.io/cdn/html/gh-proxy.html -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>GitHub 加速</title>
+  <link class="github-icon" rel="icon" href="./1_files/github.png">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>html,body{width:100%;margin:0 auto 0 auto}div{margin:0;padding:0;box-sizing:border-box;position:relative}#container{width:100%;min-height:100%;display:flex;flex-direction:column}body{min-height:100%;box-sizing:border-box;background-color:#fff}h1{text-align:left;color:#333;letter-spacing:0.05em;font-size:2em;text-align:center;pointer-events:none;font-weight:700;font-size:28px}p{margin:0 0 0.1rem;color:#111}h1,h2,h3,text,p{font-family:Miriam Libre,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,PingFang SC,Noto Sans CJK SC,Sarasa Gothic SC,Microsoft YaHei,sans-serif,Apple Color Emoji,Segoe UI Emoji}#footer{width:100%;height:100px;text-align:center;margin-top:auto}.flex{display:flex;flex-direction:column;justify-content:center;align-items:center}.block{display:block;position:relative}.url{font-size:18px;padding:10px 10px 10px 10px;position:relative;width:300px;border:none;border-bottom:1px solid#bfbfbf;text-align:left;color:#444}input:focus{outline:none}.buttons{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;text-align:center;width:100%;height:100%;margin:0 auto;padding:2em 0em}.container{align-items:center;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:40px 0px;width:240px}.btn{letter-spacing:0.1em;cursor:pointer;font-size:14px;font-weight:400;line-height:40px;max-width:120px;position:relative;text-decoration:none;text-transform:uppercase;width:100%}.btn:hover{text-decoration:none}.effect{color:#fff;border:2px solid#000;box-shadow:0px 0px 0px 1px#000 inset;background-color:#000;overflow:hidden;position:relative;transition:all 0.5s ease-in-out}.effect:hover{border:2px solid#666;background-color:#fff;box-shadow:0px 0px 0px 4px#eee inset}.effect span{transition:all 0.5s ease-out;z-index:2}.effect:hover span{letter-spacing:0.13em;color:#333}.effect:after{background:#fff;border:0px solid#000;content:"";height:155px;left:-75px;opacity:0.8;position:absolute;top:-50px;-webkit-transform:rotate(35deg);transform:rotate(35deg);width:50px;transition:all 1s cubic-bezier(0.075,0.82,0.165,1);z-index:1}.effect:hover:after{background:#fff;border:20px solid#000;opacity:0;left:120%;-webkit-transform:rotate(40deg);transform:rotate(40deg)}@media(max-width:500px){h1{margin-top:80px}}@media(prefers-color-scheme:dark){body{background-color:#000}h1{color:#eee}.url{background-color:#000;color:#eee}.effect{color:#000;border:2px solid#fff;box-shadow:0px 0px 0px 1px#fff inset;background-color:#fff}.effect:hover{border:2px solid#eee;background-color:#000;box-shadow:0px 0px 0px 4px#000 inset}.effect:hover span{letter-spacing:0.13em;color:#eee}.effect:after{background:#000;border:0px solid#fff}.effect:hover:after{background:#000;border:20px solid#fff}}</style>
+ </head>
+ <body>
+  <div id="container" style="
+        width: 100%;
+        height: 100%;
+        padding-top: 15px;
+        padding-bottom: 100px;
+        margin: 0 auto 0 auto;
+      ">
+   <h1 style="margin-bottom: 50px; padding-top: 80px">
+    <img src="./1_files/github.png" alt="HTML5 Logo" style="width: 30px">&nbsp; GitHub 文件加速</h1>
+   <form action="https://aaronyes.github.io/cdn/html/" method="get" style="padding-bottom: 40px" target="_blank" class="flex">
+    <label class="block" style="width: fit-content"><input class="url" name="q" id="url" type="text" placeholder="键入 Github 文件链接" pattern="^(?:(?:https|http):\/\/)?github\.com\/.+?\/.+?\/(?:releases|archive|blob)\/.+$" required="">
+     <div class="bar"></div></label>
+    <div class="buttons">
+     <a class="btn effect" id="clickBox"><span>下载</span></a>
+     <input type="submit" id="submit" style="display: none">
+    </div>
+   </form>
+  </div>
+  <div id="footer">
+    <a href="https://github.com/hunshcn/gh-proxy"><img src="./1_files/Base on-GH PRPXY-red"></a>
+  </div>
+  <script>var domClickBox=document.getElementById("clickBox");var domSubmitInput=document.getElementById("submit");domClickBox.addEventListener("click",refsInput);function refsInput(){sleep(300).then(()=>{domSubmitInput.click()});sleep(1000).then(()=>{document.getElementById("url").value=""})}function sleep(time){return new Promise((resolve)=>setTimeout(resolve,time))}</script>
+ 
+</body></html>
