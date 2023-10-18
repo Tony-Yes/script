@@ -36,6 +36,7 @@ WantedBy=multi-user.target
 EOF
 
 systemctl daemon-reload
+chmod +x /opt/qbittorrent-nox
 ./opt/qbittorrent-nox <<< "y"
 systemctl enable --now qbittorrent
 systemctl status qbittorrent
