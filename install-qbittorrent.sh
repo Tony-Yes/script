@@ -37,6 +37,8 @@ EOF
 
 systemctl daemon-reload
 chmod +x "$work_dir"/qbittorrent-nox
-./qbittorrent-nox <<< "y"
+./qbittorrent-nox <<< "y" &
+PID=$!
+kill -SIGINT $PID
 systemctl enable --now qbittorrent
 systemctl status qbittorrent
