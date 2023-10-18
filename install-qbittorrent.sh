@@ -36,7 +36,7 @@ WantedBy=multi-user.target
 EOF
 
 systemctl daemon-reload
-chmod +x qbittorrent-nox
+chmod +x "$work_dir"/qbittorrent-nox
 ./qbittorrent-nox <<< "y"
 systemctl enable --now qbittorrent
 systemctl status qbittorrent
