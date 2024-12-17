@@ -38,7 +38,12 @@ EOF
 systemctl daemon-reload
 chmod +x "$work_dir"/qbittorrent-nox
 ./qbittorrent-nox <<< "y" &
-PID=$!
-kill -SIGINT $PID
+sleep 3
+pkill qbittorrent
 systemctl enable --now qbittorrent
-systemctl status qbittorrent
+systemctl status qbittorrent --no-pager
+
+echo "qBittorrent 已成功安装和配置，请尽快登入后台修改默认密码 "
+echo "请访问 http://公网IP:8080 登录。"
+echo "默认用户名: admin"
+echo "默认密码: adminadmin"
