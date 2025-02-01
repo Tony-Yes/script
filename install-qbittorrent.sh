@@ -3,12 +3,32 @@
 # 检测系统架构
 arch=$(uname -m)
 
-if [[ $arch == "x86_64" ]]; then
-    url="https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.3.9_v1.2.15/x86_64-qbittorrent-nox"
-elif [[ $arch == "aarch64" ]]; then
-    url="https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.3.9_v1.2.15/aarch64-qbittorrent-nox"
+# 提示用户选择版本
+echo "请选择要安装的版本:"
+echo "1. qbittorrent 4.3.9 libtorrent 1.2.15"
+echo "2. qbittorrent 4.3.9 libtorrent 2.0.5"
+read -p "请输入选项 (1 或 2): " version
+
+if [[ $version == "1" ]]; then
+    if [[ $arch == "x86_64" ]]; then
+        url="https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.3.9_v1.2.15/x86_64-qbittorrent-nox"
+    elif [[ $arch == "aarch64" ]]; then
+        url="https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.3.9_v1.2.15/aarch64-qbittorrent-nox"
+    else
+        echo "Unsupported architecture: $arch"
+        exit 1
+    fi
+elif [[ $version == "2" ]]; then
+    if [[ $arch == "x86_64" ]]; then
+        url="https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.3.9_v2.0.5/x86_64-qbittorrent-nox"
+    elif [[ $arch == "aarch64" ]]; then
+        url="https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.3.9_v2.0.5/aarch64-qbittorrent-nox"
+    else
+        echo "Unsupported architecture: $arch"
+        exit 1
+    fi
 else
-    echo "Unsupported architecture: $arch"
+    echo "无效选项: $version"
     exit 1
 fi
 
